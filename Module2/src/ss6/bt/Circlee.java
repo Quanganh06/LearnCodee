@@ -1,35 +1,35 @@
 package ss6.bt;
 
 public class Circlee {
-    private int bankinh;
+    private int radius;
     private String color;
 
-    public int getBankinh() {
-        return bankinh;
+    public int getRadius() {
+        return radius;
     }
 
-    public void setBankinh() {
-        this.bankinh = bankinh;
+    public void setRadius(int radius) {
+        this.radius = radius;
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor() {
+    public void setColor(String color) {
         this.color = color;
     }
 
     public Circlee() {
     }
 
-    public Circlee(int bankinh, String color) {
-        this.bankinh = bankinh;
+    public Circlee(int radius, String color) {
+        this.radius = radius;
         this.color = color;
     }
 
     public double Area() {
-        return Math.PI * bankinh * bankinh;
+        return Math.PI * radius * radius;
     }
 }
 

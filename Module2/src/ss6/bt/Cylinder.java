@@ -3,8 +3,8 @@ package ss6.bt;
 public class Cylinder extends Circlee {
     private double height;
 
-    public Cylinder(int bankinh, String color, double height) {
-        super(bankinh, color);
+    public Cylinder(int radius, String color, double height) {
+        super(radius, color);
         this.height = height;
     }
 
@@ -16,12 +16,14 @@ public class Cylinder extends Circlee {
         this.height = height;
     }
 
+    @Override
     public String toString() {
-        return "Bankinh"+super.getBankinh()+",mau sac: "+super.getColor();
+        return "Bankinh " + super.getRadius() + ", mau sac: " + super.getColor()+" Dien tich: "+Area();
     }
 
     public static void main(String[] args) {
-        Circlee cylinder=new Cylinder(5,"red",2);
-
+        Cylinder cylinder = new Cylinder(5, "red", 2);
+        System.out.println(cylinder.toString());
     }
 }
+
