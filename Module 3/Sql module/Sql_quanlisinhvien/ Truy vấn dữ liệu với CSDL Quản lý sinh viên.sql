@@ -10,10 +10,6 @@ WHERE credit BETWEEN 3 AND 5;
 UPDATE student
 SET classId = 2
 WHERE studentName = 'Hung';
-SELECT studentName, subName, mark
-FROM student
-JOIN enrollment ON student.StudentID = enrollment.StudentID
-JOIN subject ON enrollment.SubID = subject.SubID
-ORDER BY Mark DESC, StudentName ASC;
+
 
 
